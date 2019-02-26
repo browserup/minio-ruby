@@ -3,8 +3,10 @@ require "net/https"
 require "base64"
 require "openssl"
 require 'uri'
+require "minio/config"
 require "minio/signer"
 require "minio/digestor"
+require "minio/client"
 require 'digest'
 
 module MinioRuby
