@@ -19,4 +19,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency('http', '~> 2.0')
   spec.add_development_dependency('rspec')
+  spec.add_development_dependency('rubocop')
 end
