@@ -4,7 +4,7 @@ require "base64"
 require "openssl"
 require 'uri'
 require "minio/signer"
-require "minio/digest"
+require "minio/digestor"
 require 'digest'
 
 module MinioRuby
