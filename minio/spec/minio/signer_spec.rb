@@ -1,7 +1,13 @@
-require_relative '../spec_helper'
-require 'tempfile'
+require 'spec_helper'
 
 RSpec.describe MinioRuby::Signer do
+  MinioRuby::Client.configure do |config|
+    config.access_key = "akid"
+    config.secret_key = "secret"
+    config.region = "REGION"
+    config.service = "SERVICE"
+  end
+
   let(:config) { MinioRuby::Client.configure }
 
   it 'populates the Host header' do
@@ -68,29 +74,6 @@ RSpec.describe MinioRuby::Signer do
     expect(signature.headers['x-amz-content-sha256']).to be(nil)
   end
 
-  it 'computes the checksum of files without loading them into memory' do
-    body = Tempfile.new('tempfile')
-    body.write('abc')
-    body.flush
-    expect(body).not_to receive(:read)
-    expect(body).not_to receive(:rewind)
-    signature = described_class.new(config: config).sign_request(
-      http_method: 'POST',
-      url: 'https://domain.com',
-      body: body
-    )
-    expect(signature.headers['x-amz-content-sha256']).to eq(Digest::SHA256.hexdigest('abc'))
-  end
-
-  it 'reads non-file IO objects into  memory to compute checksusm' do
-    signature = described_class.new(config: config).sign_request(
-      http_method: 'PUT',
-      url: 'http://domain.com',
-      body: StringIO.new('abc')
-    )
-    expect(signature.content_sha256).to eq(Digest::SHA256.hexdigest('abc'))
-  end
-
   it 'does not read the body if X-Amz-Content-Sha256 if already present' do
     body = double('http-payload')
     expect(body).to_not receive(:read)
@@ -119,10 +102,11 @@ RSpec.describe MinioRuby::Signer do
   end
 
   it 'signs the request' do
-    options[:unsigned_headers] = ['content-length']
-    signature = described_class.new(config: config).sign_request(
+    allow(Time).to receive(:now).and_return(Time.parse('20120101T112233Z'))
+
+    signature = described_class.new(config: config, unsigned_headers: ['content-length']).sign_request(
       http_method: 'PUT',
-      url: 'https://domain.com',
+      url: 'https://domain.com/',
       headers: {
         'Foo' => 'foo',
         'Bar' => 'bar  bar',
@@ -130,9 +114,9 @@ RSpec.describe MinioRuby::Signer do
         'Content-Length' => 9,
         'X-Amz-Date' => '20120101T112233Z',
       },
-      body: StringIO.new('http-body')
+      body: 'http-body'
     )
-    expect(signature.headers['authorization']).to eq('AWS4-HMAC-SHA256 Credential=akid/20120101/REGION/SERVICE/aws4_request, SignedHeaders=bar;bar2;foo;host;x-amz-content-sha256;x-amz-date, Signature=4a7d3e06d1950eb64a3daa1becaa8ba030d9099858516cb2fa4533fab4e8937d')
-  end
 
+    expect(signature.authorization).to eq('AWS4-HMAC-SHA256 Credential=akid/20120101/REGION/SERVICE/aws4_request, SignedHeaders=bar;bar2;foo;host;x-amz-content-sha256;x-amz-date, Signature=4a7d3e06d1950eb64a3daa1becaa8ba030d9099858516cb2fa4533fab4e8937d')
+  end
 end
