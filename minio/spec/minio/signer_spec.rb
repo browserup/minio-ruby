@@ -1,11 +1,13 @@
 require 'spec_helper'
 
 RSpec.describe MinioRuby::Signer do
-  MinioRuby::Client.configure do |config|
-    config.access_key = "akid"
-    config.secret_key = "secret"
-    config.region = "REGION"
-    config.service = "SERVICE"
+  before(:all) do
+    MinioRuby::Client.configure do |config|
+      config.access_key = "akid"
+      config.secret_key = "secret"
+      config.region = "REGION"
+      config.service = "SERVICE"
+    end
   end
 
   let(:config) { MinioRuby::Client.configure }
