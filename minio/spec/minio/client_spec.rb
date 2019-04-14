@@ -1,10 +1,14 @@
 require 'spec_helper'
 
 RSpec.describe MinioRuby::Client do
-  described_class.config do |config|
-    config.access_key = ENV.fetch('MINIO_ACCESS_KEY')
-    config.secret_key = ENV.fetch('MINIO_SECRET_KEY')
-    config.endpoint = ENV.fetch('MINIO_HOST')
+  before(:all) do
+    described_class.config do |config|
+      config.access_key = ENV.fetch('MINIO_ACCESS_KEY')
+      config.secret_key = ENV.fetch('MINIO_SECRET_KEY')
+      config.endpoint = ENV.fetch('MINIO_HOST')
+      config.region = 'us-east-1'
+      config.service = 's3'
+    end
   end
 
   subject(:client) { described_class.new }
@@ -60,9 +64,31 @@ RSpec.describe MinioRuby::Client do
     end
 
     it 'uploads an object' do
+      bucket = SecureRandom.uuid
+      client.make_bucket(bucket)
+      file = "#{SecureRandom.uuid}.txt"
+      content = SecureRandom.alphanumeric(1000)
+
+      expect(client.put_object(bucket, file, content)).to be_truthy
+    end
+
+    it 'uploads an object in a directory' do
+      bucket = SecureRandom.uuid
+      client.make_bucket(bucket)
+      file = "#{SecureRandom.uuid}/#{SecureRandom.uuid}.txt"
+      content = SecureRandom.alphanumeric(1000)
+
+      expect(client.put_object(bucket, file, content)).to be_truthy
     end
 
     it 'downloads an object' do
+      bucket = SecureRandom.uuid
+      client.make_bucket(bucket)
+      file = "#{SecureRandom.uuid}.txt"
+      content = SecureRandom.alphanumeric(1000)
+      client.put_object(bucket, file, content)
+
+      expect(client.get_object(bucket, file)).to eq(content)
     end
   end
 end

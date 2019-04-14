@@ -27,6 +27,7 @@ module MinioRuby
       sigv4_headers['host'] = host(url)
       sigv4_headers['x-amz-date'] = datetime
       sigv4_headers['x-amz-content-sha256'] ||= content_sha256 if apply_checksum_header?
+      sigv4_headers['content-type'] ||= headers['content-type'] if headers['content-type']
 
       headers = headers.merge(sigv4_headers)
       signature = compute_signature(http_method: http_method, url: url, headers: headers, content_sha: content_sha256, datetime: datetime)

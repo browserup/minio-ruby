@@ -59,13 +59,15 @@ module MinioRuby
     def get_object(bucket, name)
       request_url = "#{config.endpoint}/#{bucket}/#{name}"
       signature = signer.sign_request(http_method: :get, url: request_url)
-      RestClient.get(request_url, signature.headers)
+      response = RestClient.get(request_url, signature.headers)
+      response.body if response.code == 200
     end
 
-    def put_object(bucket, name, data, length: nil, content_type: 'application/octet-stream')
+    def put_object(bucket, name, data, content_type: 'application/octet-stream')
       request_url = "#{config.endpoint}/#{bucket}/#{name}"
-      signature = signer.sign_request(http_method: :put, url: request_url, body: data, headers: { 'content_type' => content_type })
-      RestClient.put(request_url, data, signature.headers)
+      signature = signer.sign_request(http_method: :put, url: request_url, body: data, headers: { 'Content-Type' => content_type })
+      response = RestClient.put(request_url, data, signature.headers)
+      response.code == 200
     end
 
     private
