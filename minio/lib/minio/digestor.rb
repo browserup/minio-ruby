@@ -43,7 +43,7 @@ module MinioRuby
 
       def fragmented_digest(value)
         sha256 = OpenSSL::Digest::SHA256.new
-        while chunk = value.read(1024 * 1024, buffer ||= '') # 1MB
+        while chunk = value.read(1024 * 1024, buffer ||= ''.dup) # 1MB
           sha256.update(chunk)
         end
 
