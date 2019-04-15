@@ -33,4 +33,36 @@ RSpec.describe MinioRuby::Config do
     it { expect(subject.transport).to eq(options[:transport]) }
     it { expect(subject.region).to eq(options[:region]) }
   end
+
+  describe '#endpoint' do
+    let(:options) { {} }
+    subject(:subject) { described_class.new(options) }
+
+    context 'URI without schema' do
+      let(:options) do
+        { endpoint: '1.2.3.4:4000' }
+      end
+
+      it { expect(subject.endpoint).to eq("http://#{options[:endpoint]}") }
+    end
+
+    context 'setting a URI without schema' do
+      it 'adds http://' do
+        subject.endpoint = 'example.com'
+        expect(subject.endpoint).to eq('http://example.com')
+      end
+    end
+
+    context 'URI with schema' do
+      it 'has http://' do
+        subject.endpoint = 'http://example.com'
+        expect(subject.endpoint).to eq('http://example.com')
+      end
+
+      it 'has https://' do
+        subject.endpoint = 'https://example.com'
+        expect(subject.endpoint).to eq('https://example.com')
+      end
+    end
+  end
 end
