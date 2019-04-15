@@ -7,7 +7,6 @@ RSpec.describe MinioRuby::Client do
       config.secret_key = ENV.fetch('MINIO_SECRET_KEY')
       config.endpoint = ENV.fetch('MINIO_HOST')
       config.region = 'us-east-1'
-      config.service = 's3'
     end
   end
 

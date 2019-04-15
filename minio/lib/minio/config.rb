@@ -3,7 +3,8 @@
 module MinioRuby
   class Config
     attr_accessor :endpoint, :port, :transport, :secure
-    attr_accessor :access_key, :secret_key, :region, :service
+    attr_accessor :access_key, :secret_key, :region
+    attr_reader :service
 
     def initialize(args = {})
       @endpoint   = args[:endpoint] || 'http://localhost:9000'
@@ -13,7 +14,7 @@ module MinioRuby
       @secure     = args[:secure]
       @transport  = args[:transport]
       @region     = args[:region] || 'us-east-1'
-      @service    = args[:service] || 's3'
+      @service    = 's3'
     end
   end
 end

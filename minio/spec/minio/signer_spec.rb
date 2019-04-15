@@ -6,7 +6,6 @@ RSpec.describe MinioRuby::Signer do
       config.access_key = "akid"
       config.secret_key = "secret"
       config.region = "REGION"
-      config.service = "SERVICE"
     end
   end
 
@@ -105,6 +104,7 @@ RSpec.describe MinioRuby::Signer do
 
   it 'signs the request' do
     allow(Time).to receive(:now).and_return(Time.parse('20120101T112233Z'))
+    expected = "AWS4-HMAC-SHA256 Credential=akid/20120101/REGION/s3/aws4_request, SignedHeaders=bar;bar2;foo;host;x-amz-content-sha256;x-amz-date, Signature=a2c93954a91d32df3cd6bef0401f43b81ffa6d220a5722e0694c81f1af0fcf45"
 
     signature = described_class.new(config: config, unsigned_headers: ['content-length']).sign_request(
       http_method: 'PUT',
@@ -119,6 +119,6 @@ RSpec.describe MinioRuby::Signer do
       body: 'http-body'
     )
 
-    expect(signature.authorization).to eq('AWS4-HMAC-SHA256 Credential=akid/20120101/REGION/SERVICE/aws4_request, SignedHeaders=bar;bar2;foo;host;x-amz-content-sha256;x-amz-date, Signature=4a7d3e06d1950eb64a3daa1becaa8ba030d9099858516cb2fa4533fab4e8937d')
+    expect(signature.authorization).to eq(expected)
   end
 end
