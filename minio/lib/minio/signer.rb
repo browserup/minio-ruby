@@ -24,7 +24,7 @@ module MinioRuby
       content_sha256 ||= sha256_hexdigest(request[:body] || '')
 
       sigv4_headers = {}
-      sigv4_headers['host'] = host(url)
+      sigv4_headers['host'] = Utils.host(url)
       sigv4_headers['x-amz-date'] = datetime
       sigv4_headers['x-amz-content-sha256'] ||= content_sha256 if apply_checksum_header?
       sigv4_headers['content-type'] ||= headers['content-type'] if headers['content-type']
@@ -169,19 +169,6 @@ module MinioRuby
 
     def canonical_header_value(value)
       /^".*"$/.match?(value) ? value : value.gsub(/\s+/, ' ').strip
-    end
-
-    def host(uri)
-      if standard_port?(uri)
-        uri.host
-      else
-        "#{uri.host}:#{uri.port}"
-      end
-    end
-
-    def standard_port?(uri)
-      (uri.scheme == 'http' && uri.port == 80) ||
-        (uri.scheme == 'https' && uri.port == 443)
     end
 
     def sha256_hexdigest(value)

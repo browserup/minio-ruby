@@ -18,5 +18,18 @@ module MinioRuby
         .gsub('+', '%20')
         .gsub('%7E', '~')
     end
+
+    def host(uri)
+      if standard_port?(uri)
+        uri.host
+      else
+        "#{uri.host}:#{uri.port}"
+      end
+    end
+
+    def standard_port?(uri)
+      (uri.scheme == 'http' && uri.port == 80) ||
+        (uri.scheme == 'https' && uri.port == 443)
+    end
   end
 end
