@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../spec_helper'
+require_relative 'spec_helper'
 
 RSpec.describe MinioRuby::Config do
   context 'without params' do

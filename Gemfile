@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 
-gemspec path: 'minio'
+gemspec
+
 gem 'rake', require: false

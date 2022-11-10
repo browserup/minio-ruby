@@ -1,0 +1,903 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:9000/chunky-bacon-1668124108
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234828Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=4abec7799cdf4387d95a3b69a2bd6ae3f6cd1159227d6577446677f03968007a
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Location:
+      - "/chunky-bacon-1668124108"
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A00365950
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: head
+    uri: http://localhost:9000/b6b9fad4-15be-4200-9a5c-a63b1a661dcd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=091a94b685f85a54d11a04b7da189773e59eef8fcbcf33c00a87f3e9468251dd
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A01BE266B
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: put
+    uri: http://localhost:9000/39b7a927-b23a-460a-abfc-37bea9364d51
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=75062588a62d2a2fb3699b06926eed6edf982fdf0046a2f2ddd210c6096d16d7
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Location:
+      - "/39b7a927-b23a-460a-abfc-37bea9364d51"
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A029BD53B
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: head
+    uri: http://localhost:9000/39b7a927-b23a-460a-abfc-37bea9364d51
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=3f601a0b5ea5df3da05530b79844d5065f7a7bcd9efd0de77f2633cdf07879b0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Content-Type:
+      - application/xml
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A030543A1
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: get
+    uri: http://localhost:9000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=1105d2051329f523e0dd1fb8ec367c68705b0222d48ea84e565e382fd4fc51b2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Content-Type:
+      - application/xml
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A03D8765D
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+      Content-Length:
+      - '1266'
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <ListAllMyBucketsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Owner><ID>02d6176db174dc93cb1b899f7c6078f08654445fe8cf1b6ce98d8855f66bdbf4</ID><DisplayName>minio</DisplayName></Owner><Buckets><Bucket><Name>024e1c01-679a-4c12-92a5-c6844d2d76de</Name><CreationDate>2022-11-10T23:28:32.080Z</CreationDate></Bucket><Bucket><Name>0263e50c-feeb-4ddc-9e09-066c42ff6107</Name><CreationDate>2022-11-10T23:45:29.903Z</CreationDate></Bucket><Bucket><Name>0543bf46-9628-4817-ba62-3930dd3e5f70</Name><CreationDate>2022-11-10T23:45:29.951Z</CreationDate></Bucket><Bucket><Name>11c46b3c-8e31-402b-9b35-32c99d5e9d5a</Name><CreationDate>2022-11-10T23:13:51.644Z</CreationDate></Bucket><Bucket><Name>17b2e8c3-e0df-480e-8795-7316a3e5cb13</Name><CreationDate>2022-11-10T23:27:38.679Z</CreationDate></Bucket><Bucket><Name>1ba32730-8104-45bd-811a-ca146d0d148e</Name><CreationDate>2022-11-10T23:13:51.617Z</CreationDate></Bucket><Bucket><Name>1ddf382e-e549-4569-9e9a-10a5663c93c2</Name><CreationDate>2022-11-10T23:45:29.985Z</CreationDate></Bucket><Bucket><Name>27fbca56-8f08-4e00-becb-09a9422c524c</Name><CreationDate>2022-11-10T23:29:27.277Z</CreationDate></Bucket><Bucket><Name>29c61aac-ea82-4090-9937-4d0d26ab709c</Name><CreationDate>2022-11-10T23:29:54.568Z</CreationDate></Bucket><Bucket><Name>39b7a927-b23a-460a-abfc-37bea9364d51</Name><CreationDate>2022-11-10T23:48:29.074Z</CreationDate></Bucket><Bucket><Name>44c6ca13-e21b-49af-9c72-45efee190504</Name><CreationDate>2022-11-10T23:27:38.613Z</CreationDate></Bucket><Bucket><Name>77753ff8-d493-4509-8943-f0e689ac1e17</Name><CreationDate>2022-11-10T23:13:51.631Z</CreationDate></Bucket><Bucket><Name>85f889c4-ce6b-4200-96cb-b8836ef8e380</Name><CreationDate>2022-11-10T23:29:27.358Z</CreationDate></Bucket><Bucket><Name>9a1ad1c5-62d4-46d2-8355-0e21d4340ca0</Name><CreationDate>2022-11-10T23:13:51.571Z</CreationDate></Bucket><Bucket><Name>9b05ef73-6dbc-4f5c-954a-c87bbdfdf1b8</Name><CreationDate>2022-11-10T23:29:27.342Z</CreationDate></Bucket><Bucket><Name>b907cd85-ca55-4f7c-ae3e-d366bef37f0e</Name><CreationDate>2022-11-10T23:29:54.475Z</CreationDate></Bucket><Bucket><Name>ccdc4af5-338b-4b8b-8141-9f1428e0dd1d</Name><CreationDate>2022-11-10T23:45:29.968Z</CreationDate></Bucket><Bucket><Name>chunky-bacon-1668122031</Name><CreationDate>2022-11-10T23:13:51.556Z</CreationDate></Bucket><Bucket><Name>chunky-bacon-1668122858</Name><CreationDate>2022-11-10T23:27:38.561Z</CreationDate></Bucket><Bucket><Name>chunky-bacon-1668122911</Name><CreationDate>2022-11-10T23:28:31.967Z</CreationDate></Bucket><Bucket><Name>chunky-bacon-1668122967</Name><CreationDate>2022-11-10T23:29:27.251Z</CreationDate></Bucket><Bucket><Name>chunky-bacon-1668122994</Name><CreationDate>2022-11-10T23:29:54.449Z</CreationDate></Bucket><Bucket><Name>chunky-bacon-1668123929</Name><CreationDate>2022-11-10T23:45:29.853Z</CreationDate></Bucket><Bucket><Name>chunky-bacon-1668124108</Name><CreationDate>2022-11-10T23:48:29.034Z</CreationDate></Bucket><Bucket><Name>deb1b274-2dc9-4870-b6ee-5878d5e18701</Name><CreationDate>2022-11-10T23:29:27.299Z</CreationDate></Bucket><Bucket><Name>e07241df-780b-4916-bad3-1ab3f0bbf973</Name><CreationDate>2022-11-10T23:29:54.505Z</CreationDate></Bucket><Bucket><Name>e3b67812-f99c-41c9-a6b2-7a00d3a4f14d</Name><CreationDate>2022-11-10T23:28:32.063Z</CreationDate></Bucket><Bucket><Name>e6bf414c-5d2a-4439-8e22-50a88c42d059</Name><CreationDate>2022-11-10T23:28:31.990Z</CreationDate></Bucket><Bucket><Name>e876440a-c58f-44e7-baea-f9b93ad9c253</Name><CreationDate>2022-11-10T23:45:29.878Z</CreationDate></Bucket><Bucket><Name>ea20f370-c489-4dbf-8732-709c80d03394</Name><CreationDate>2022-11-10T23:28:32.096Z</CreationDate></Bucket><Bucket><Name>eb054bd2-bf2f-4f38-9347-8e98adf48c88</Name><CreationDate>2022-11-10T23:27:38.661Z</CreationDate></Bucket><Bucket><Name>ef497e66-6def-4012-af42-0174a8be7d48</Name><CreationDate>2022-11-10T23:13:51.585Z</CreationDate></Bucket><Bucket><Name>f01175dc-5876-496b-bb51-e9df1db5c438</Name><CreationDate>2022-11-10T23:27:38.697Z</CreationDate></Bucket><Bucket><Name>f1f90a6a-2e62-4c48-b684-3f40f320c680</Name><CreationDate>2022-11-10T23:28:32.018Z</CreationDate></Bucket><Bucket><Name>f54bbd90-aa1e-4600-b164-6ce9f7ba5996</Name><CreationDate>2022-11-10T23:29:27.375Z</CreationDate></Bucket><Bucket><Name>fb95bbce-6661-4e05-9d56-9002d03244c8</Name><CreationDate>2022-11-10T23:27:38.589Z</CreationDate></Bucket><Bucket><Name>fc1c802f-ee8b-43c9-a530-72e8a4641015</Name><CreationDate>2022-11-10T23:29:54.550Z</CreationDate></Bucket><Bucket><Name>fc87d511-90e5-4133-91b1-81d333734991</Name><CreationDate>2022-11-10T23:29:54.586Z</CreationDate></Bucket></Buckets></ListAllMyBucketsResult>
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: put
+    uri: http://localhost:9000/60055636-d6e8-4834-9ba9-87389abaf604
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=7711080ba30c22c7d0fa0980b65fdaaf63b5e7ce183bac24a7b82cb2211469de
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Location:
+      - "/60055636-d6e8-4834-9ba9-87389abaf604"
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A0535E9AC
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: put
+    uri: http://localhost:9000/3bfe9861-8214-4cf0-a375-5d53677ad451
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=59ddd660fce2f7a48afa01118bc98ef52c5280ff33c9c56cd3e07503dfc77d35
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Location:
+      - "/3bfe9861-8214-4cf0-a375-5d53677ad451"
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A07960092
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: delete
+    uri: http://localhost:9000/3bfe9861-8214-4cf0-a375-5d53677ad451
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=38b3efad16fc593229a1b88b2c6ece4c9ea9fe380c78079a8cdd9626c5ceb82b
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A0839C754
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: delete
+    uri: http://localhost:9000/c2db842a-1d4e-4b21-9dbd-2b4aa1fa2db4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=da7399a44c2db209f8e8032a4e269a9a6faf304486971c8e5070d4dc23f29973
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '344'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Content-Type:
+      - application/xml
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A09CBC211
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>c2db842a-1d4e-4b21-9dbd-2b4aa1fa2db4</BucketName><Resource>/c2db842a-1d4e-4b21-9dbd-2b4aa1fa2db4</Resource><RequestId>17265E0A09CBC211</RequestId><HostId>43527f62-ebff-4e17-adb1-07e18056e7a9</HostId></Error>
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: put
+    uri: http://localhost:9000/cfef3cbf-61f5-4d74-a14c-df48094ca96f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=aa59d2f6bcd37e1de380c70b614b59b2f552f5a2f0c4ab70d6e9bb1aee9a724e
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Location:
+      - "/cfef3cbf-61f5-4d74-a14c-df48094ca96f"
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A0B377336
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: put
+    uri: http://localhost:9000/cfef3cbf-61f5-4d74-a14c-df48094ca96f/b726b682-c467-4632-a37f-0eea3adfae67.txt
+    body:
+      encoding: US-ASCII
+      string: XOOp15NO546hLMEcxKf3Q8jLWe8F0eEW1PchOSnlKuHmnWX5wOnXlZFimAkJpO4N8w3mfMz4X4NJ19aX01pmrgylog7t5H1gEsmdaqEf1kpuTIrgAJGQg49NoyXOi2FGTaIHkE4wjZvaxhZcUyvzNuxEqGeI9Ew351FDwBeppiHFmpjkVdHk1kPYgcqVWUFpqyylBn5fRL0dStsG2qW0ikb47uAlqDyjoqGaurXVwa8qjaFeVDVme99gn5wBVsCAS3TPF5AN6T3V4HGJJyHRbiUz62H7uxv0BR7QcKu9mSHkfgsw6FCUHE2JFU2O0mJfvdwbGCqCguHti8Dy7ccPKiaADyfR3Inay5IbGpDjl5jjX29r1SWx2ZT2GB4XOhdRf4PrZmpBhfhei9t4xzwLPWUuP6JivKfac8Afc1jWpALm14LBRbITt4NKDOo7zxhKewqFBDINs3iscPf5pKSNwhuPLNke0gIglv12EdgRE9NwRRYAx4lVStZHX9CQXBhMeOrI6pTc0RL5ftTuVJW1zy9QgWTPF7qURD2OIhXgIAiTu6wpGjEx2m2SEAB5zXtTAiBKZlm7V2CCavAHfsz2T57uObMviRjeoQ8M1uTV3B9PtI61Ksq61m1WCWfGTvMd0lEq0jSn0upuhaOqqRaWuI3MZqNofN0dO7EbIurrGKYdhiehpuXZuF63E2uv8zgIMrOlQBmMOP6wRwPjTFq8fmRpQtSeDPFuImJXDKOtRrMny939wZvUPpuD9nsJ2b2KW2Hz4ME6sv0qlLmPdGnWk2Avtyj0UzVegKaUdMj115M7EVKCZIL0kdkLPn4XalqN1MlhujBeqLN7nOOLWY0G5ckrTlzfYFtMZ9CoZduGCbuDEmxNGIgkuuVrXIPbvFbWSqPvyN9pOvWCSoZL70SMSJEZCzKurgjlv2JPZpMICYUAdAntfvaKcX77Nsd4g0WZ5hCllb13oWKklz3wd6UfCCnkIWYyNUv2YdcxOPFV
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - 9a5819ce6d08fb018d15487a26b606eac2f1cdfa7b9446b04e4988db3fe92a31
+      Content-Type:
+      - application/octet-stream
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date,
+        Signature=52da9a79469f4884de431e39c1671c6ad0261800cbd291a9716278b21243d889
+      Content-Length:
+      - '1000'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Etag:
+      - '"ac329f0ca471242dc1fa89760bed960d"'
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A0C33C0E4
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: put
+    uri: http://localhost:9000/25279ffd-6433-4151-9e20-e066df61a172
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=34a65bbd7fa27256bd4c7c572528922373fc002581b1aef58e23fc7d181befe0
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Location:
+      - "/25279ffd-6433-4151-9e20-e066df61a172"
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A0E15F58D
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: put
+    uri: http://localhost:9000/25279ffd-6433-4151-9e20-e066df61a172/794073c0-87a5-49f6-b4cd-9aea02b10218/0d7adf8d-6a79-46cc-b19b-05f86e24f1c2.txt
+    body:
+      encoding: US-ASCII
+      string: v2b8tyB3QE91YWPfnISkoyleuTDxJrkfdCVK5U0dR4oEZalx4TgWPgXSrJtzZjV0HHg9c3xA5Ht4EnaVPgXJ5gOOGDE60446AwuM96HYLJfmI4rTQj6RxbwwLjfqN4CRVTDUqW0C3sszs23HiNLmYEIg5VsPDWYd3k7eq43myIi7RtgwiKxZVUdJOyV8sUNn5RyTmGdOskqYbkbdyBwdCZ9llfR7Gln9YD4ZALvWjfSrjU63Rs33M1HrxpapVIrqNsFLhbMMBz2TPNgcR4hRfS5SobevD8GgzIu4FzFRbKdtXgTdXwwXKSR0Gg9jxEnA1UOrEaYfJklCt5JznnQd3jeOP1DCRBD5gIpaVQaYEhzOdr1WNIDvnW1H28g4tBbwcrdKlwUG0xfvx9PRd9UlsYV3Gez6dMzD9XfXW1aWi8AZjqJsOSUWRC6uZ2KcXo7GgR7ZpPoHeVL4LepzwV6pqwA0VM9WJXeqjb1jBtO3FRBjO66nyDTARZaXtkLBfngt9bhrIbGxgIUCPVYFLfyBcc7EASZnIQjxmSS9spF0ocEBufRYo6MUkbRZUFigMCPjPJNYmAj2pySMDYH2tMfsb1dKFFveRE111Zv5YiTuDuvHcgArk00BaXmJqK0nqZw4zwpjDFprnZWDVI6OxtkaTDBHFKKFUbEAW6Qv5W8HNe2IuhWXdbSpCeZVD3YV4RVkAKpjzwPkIW2rj4YLfalf8iZxRKYI3jsRHfTb8giP8lcX25EcArfzhEGH7vEcTlJqXy0encm0QYbtAgPgBeb2Wkmp9wS6n85LpjJSybEp3qZwXQ8m5Qj0iFZQCY1trAQtOCF4jbgsQ5bnvuLI45NMveaCC5A7Q8rgQeGtQxea8wIAnz4I3dwdpvfAV8G9BdbUuzBiScsas81cqQfIlZzLIFuGoGVYiMtkhSCCewfgHvgUJ2sSWW0UVWCmu64nFwPzDTMAvzNDCG4dBsdkbg1LaVIjkVlh2CM7snY7rcOW
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - bba26bad7bc4da79cab7dfe39b20e4dc0090569bca11109b84e94699c7aece04
+      Content-Type:
+      - application/octet-stream
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date,
+        Signature=95034814bf6024b1998d57d4fdaaf19692a737f6131adbccd18bca7549d85132
+      Content-Length:
+      - '1000'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Etag:
+      - '"dfcdaf5bad17d1a07b661b1730e50744"'
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A0EFF71DA
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: put
+    uri: http://localhost:9000/f6dae4bc-25b2-4da7-ac86-32bb15b4c50b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=ca946ee8cc1c35f15228f3d18b547d531a2a7595e635ee06557cae3654d818df
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Location:
+      - "/f6dae4bc-25b2-4da7-ac86-32bb15b4c50b"
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A1118D5CA
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: put
+    uri: http://localhost:9000/f6dae4bc-25b2-4da7-ac86-32bb15b4c50b/1772e935-5f85-4e40-a2c1-76028a038fde.txt
+    body:
+      encoding: US-ASCII
+      string: pXsi6m5rmsVZPcu9VudOr7K1z7j87eVQPafH8ZAyjBAmfVjyW3DIxdrYt2AQS1Oae9fiWhkjBhZ0EH8ppKrCa44MA2jKXXdvrT1F5FVH1FcDCqbWTF0eYgpSLrPC2k2N1Ct4JZapQz5OUCbG1GrunkjjIMcNYY6XqRs0JVjsKjbfogFQv2fG0mtJZEp1rrWtoodVFfYRKMiGJTKxbkjNYmuDlyCqbf3t05D46IBCc9AObPbnlY1aczhHU4xQfctP2DAvYxQOhUk13unozbzwegwESKQJGwbRjwmJHnnhwE29ekWer6aDQK7UTm4w2WqUJDrceRzTKXpi3gpq2LVN8gtFtNDG4GaZsbnsF58HUN7yvLS6ehmHNdCZHCkbtOQjX15WyJWw6pcfxVjvDS1MYe9Ez7yqW8G1dc0L2l5gaxQDIhHApsRYI9FGsQpzHtYHGed4whm3A7Wh3RhZi1Ip7lgUi3CJYYcmcLYkLmEAonIU65NJIUsDus55517lTeu0LLZflJH5PKCnwcM2FYLPrzk7ukRmlr6Mc8h4aSfcOdmd8Hcm1fxWL6d2RYgKKukMc6m4tRKjnDVHvmxlug0uuaSPMcllhTmgD1BOjU4GrKNEk8bsalNGjpx49RiOda8ekjz3daioHL2ZUtU3KodFDrl0IX8K28EWlEzuJl9NQxKosmAdJlDx1RCfzseOvr7bC3J3V0hjD7iqKrDCfqE4Zqjngejr4DyGDiZhwtWxQOiAupnhIjHISjGlg3pNZoLMAxqZAD6R00mgzZWGSJWT2nPv9dRX9N2SuHGp31zC7Cfg8ZE511rcM8BAJbUQ4SzXI0XrlFXXj46CXJd4pVKkghIrkRkX9WruQFvAMZzEQwFTq463KJtyJnF4nyZt49UB0u4FisANdtISajFenFuSfWsOOm3MJ3mCQuaN1H27sNRXnh33W9L9IpITe29RIixYHCfGmUhrAIl5T6aBTOcoBZDcgEc9wKpFA0B80kgz
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - efe824e0846b4924d1e872a2673ab567bd7af762548809e76f9269eb4df4c85d
+      Content-Type:
+      - application/octet-stream
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date,
+        Signature=6f8bb98df2d74d7ba7182a6a5f77307a8959c8d6a015c62b72cd186c0103752f
+      Content-Length:
+      - '1000'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Etag:
+      - '"665cbc4f18b0887886a1326fd0aac280"'
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A11EE57AB
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+- request:
+    method: get
+    uri: http://localhost:9000/f6dae4bc-25b2-4da7-ac86-32bb15b4c50b/1772e935-5f85-4e40-a2c1-76028a038fde.txt
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21.6.0 arm) ruby/2.7.1p83
+      Host:
+      - localhost:9000
+      X-Amz-Date:
+      - 20221110T234829Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=minio/20221110/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date,
+        Signature=54ed21fc82b772ef5d5db3f7902287934fb4e26f27e1be1824c90f8603f786c4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '1000'
+      Content-Security-Policy:
+      - block-all-mixed-content
+      Content-Type:
+      - application/octet-stream
+      Etag:
+      - '"665cbc4f18b0887886a1326fd0aac280"'
+      Last-Modified:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+      Server:
+      - MinIO
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Amz-Request-Id:
+      - 17265E0A1294155B
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Thu, 10 Nov 2022 23:48:29 GMT
+    body:
+      encoding: UTF-8
+      string: pXsi6m5rmsVZPcu9VudOr7K1z7j87eVQPafH8ZAyjBAmfVjyW3DIxdrYt2AQS1Oae9fiWhkjBhZ0EH8ppKrCa44MA2jKXXdvrT1F5FVH1FcDCqbWTF0eYgpSLrPC2k2N1Ct4JZapQz5OUCbG1GrunkjjIMcNYY6XqRs0JVjsKjbfogFQv2fG0mtJZEp1rrWtoodVFfYRKMiGJTKxbkjNYmuDlyCqbf3t05D46IBCc9AObPbnlY1aczhHU4xQfctP2DAvYxQOhUk13unozbzwegwESKQJGwbRjwmJHnnhwE29ekWer6aDQK7UTm4w2WqUJDrceRzTKXpi3gpq2LVN8gtFtNDG4GaZsbnsF58HUN7yvLS6ehmHNdCZHCkbtOQjX15WyJWw6pcfxVjvDS1MYe9Ez7yqW8G1dc0L2l5gaxQDIhHApsRYI9FGsQpzHtYHGed4whm3A7Wh3RhZi1Ip7lgUi3CJYYcmcLYkLmEAonIU65NJIUsDus55517lTeu0LLZflJH5PKCnwcM2FYLPrzk7ukRmlr6Mc8h4aSfcOdmd8Hcm1fxWL6d2RYgKKukMc6m4tRKjnDVHvmxlug0uuaSPMcllhTmgD1BOjU4GrKNEk8bsalNGjpx49RiOda8ekjz3daioHL2ZUtU3KodFDrl0IX8K28EWlEzuJl9NQxKosmAdJlDx1RCfzseOvr7bC3J3V0hjD7iqKrDCfqE4Zqjngejr4DyGDiZhwtWxQOiAupnhIjHISjGlg3pNZoLMAxqZAD6R00mgzZWGSJWT2nPv9dRX9N2SuHGp31zC7Cfg8ZE511rcM8BAJbUQ4SzXI0XrlFXXj46CXJd4pVKkghIrkRkX9WruQFvAMZzEQwFTq463KJtyJnF4nyZt49UB0u4FisANdtISajFenFuSfWsOOm3MJ3mCQuaN1H27sNRXnh33W9L9IpITe29RIixYHCfGmUhrAIl5T6aBTOcoBZDcgEc9wKpFA0B80kgz
+  recorded_at: Thu, 10 Nov 2022 23:48:29 GMT
+recorded_with: VCR 6.1.0

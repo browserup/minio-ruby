@@ -12,7 +12,8 @@ RSpec.describe MinioRuby::Client do
 
   subject(:client) { described_class.new }
 
-  context 'bucket' do
+  context 'bucket', vcr: { record: :new_episodes, cassette_name: 'client' } do
+
     it 'creates a bucket' do
       expect(client.make_bucket("chunky-bacon-#{Time.now.to_i}")).to be_truthy
     end

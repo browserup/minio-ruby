@@ -12,13 +12,13 @@ require 'set'
 require 'cgi'
 require 'nokogiri'
 
-require 'minio/config'
-require 'minio/utils'
-require 'minio/signature'
-require 'minio/signer'
-require 'minio/digestor'
-require 'minio/bucket'
-require 'minio/client'
+require 'minio_ruby/config'
+require 'minio_ruby/utils'
+require 'minio_ruby/signature'
+require 'minio_ruby/signer'
+require 'minio_ruby/digestor'
+require 'minio_ruby/bucket'
+require 'minio_ruby/client'
 
 module MinioRuby
   class Error < StandardError; end

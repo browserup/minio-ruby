@@ -1,9 +1,16 @@
 # Minio Client SDK for Ruby [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io)
 
+NOTICE:
+------------------------------------------
+The original Minio Client is archived.
+----------------------------------------------
+
 The Minio Client SDK for Ruby provides simple APIs to access Minio or any Amazon S3 compatible object storage server.
 
 <blockquote>
-The Minio Ruby SDK is work in progress. Please do not use it in development or production.
+The Minio Ruby SDK _was_ a work in progress.
+
+It, and this fork seem to work. Use at your own risk?!?
 </blockquote>
 
 ## Installation
@@ -11,7 +18,7 @@ The Minio Ruby SDK is work in progress. Please do not use it in development or p
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'minio-ruby'
+gem 'minio_ruby'
 ```
 
 And then execute to install the deps.
@@ -23,7 +30,7 @@ bundle
 Or install it yourself as:
 
 ```
-gem install minio-ruby
+gem install minio_ruby
 ```
 
 ## Development
@@ -36,10 +43,7 @@ bundle exec rake gems:build
 
 Install the built gem file.
 
-```sh
-gem install minio-0.0.1.gem
-```
 
 ## Contributing
 
-[Contributors Guide](https://github.com/minio/minio-ruby/blob/master/CONTRIBUTING.md)
+[Contributors Guide](https://github.com/minio/minio_ruby/blob/master/CONTRIBUTING.md)
