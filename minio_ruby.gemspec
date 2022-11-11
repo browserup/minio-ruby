@@ -2,7 +2,7 @@
 version = File.read(File.expand_path('../VERSION', __FILE__)).strip
 
 Gem::Specification.new do |spec|
-  spec.name          = "minio-ruby"
+  spec.name          = "minio_ruby"
   spec.version       = version
   spec.authors       = ["Minio, Inc.", "BrowserUp, Inc."]
   spec.email         = ["dev@minio.io"]
