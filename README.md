@@ -1,9 +1,12 @@
 # Minio Client SDK for Ruby [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io)
 
 NOTICE:
-------------------------------------------
+-------------------------------------------
 The original Minio Client is archived.
-----------------------------------------------
+-------------------------------------------
+
+Note: I started messing with this, but then realized that we should really just use the S3 client and point it to a differnet endpoint as they are API compatible.
+--------------------------------------------
 
 The Minio Client SDK for Ruby provides simple APIs to access Minio or any Amazon S3 compatible object storage server.
 
